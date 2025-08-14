@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Éxito - Intercambia tus Puntos</title>
+    <meta name="description" content="Intercambia tus puntos Éxito por productos seleccionados en nuestra tienda y disfrútalos. iPhone, Samsung, PlayStation y más.">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="app-download">
+                    <div class="pulse-dot"></div>
+                    <span>DESCARGA TU APP EXITO</span>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/exito" aria-label="Facebook">
+                        <img src="logof.png" alt="Facebook" width="20" height="20">
+                    </a>
+                    <a href="https://www.instagram.com/exito" aria-label="Instagram">
+                        <img src="logos.png" alt="Instagram" width="20" height="20">
+                    </a>
+                    <a href="https://twitter.com/almacenesexito" aria-label="Twitter">
+                        <img src="X_icon.svg.png" alt="Twitter" width="20" height="20">
+                    </a>
+                    <a href="https://www.youtube.com/user/exitocol" aria-label="YouTube">
+                        <img src="youtube_logo.png" alt="YouTube" width="20" height="20">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo-container">
+                <img src="https://ext.same-assets.com/664855097/1040289674.png" alt="Éxito Logo" class="logo">
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <!-- Hero Section -->
+            <section class="hero">
+                <h1>Intercambia tus puntos Éxito por productos seleccionados en nuestra tienda y disfrútalos.</h1>
+            </section>
+
+            <!-- Points Display -->
+            <section class="points-section">
+                <div class="points-card">
+                    <div class="points-content">
+                        <div class="pulse-dot"></div>
+                        <span class="points-label">Puntos disponibles:</span>
+                        <div class="points-value">7000 Puntos</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Products Section -->
+            <section class="products-section">
+                <div class="section-header">
+                    <h2>Productos Disponibles</h2>
+                    <div class="underline"></div>
+                </div>
+
+                <div class="products-grid" id="productsGrid">
+                    <!-- iPhone 15 -->
+                    <div class="product-card" data-points="3500" data-id="iphone15">
+                        <div class="product-image">
+                            <img src="https://ext.same-assets.com/664855097/245359788.jpeg" alt="iPhone 15 128GB Nuevo Negro">
+                            <div class="product-overlay">
+                                <div class="overlay-text">Clic para seleccionar</div>
+                            </div>
+                        </div>
+                        <h3>iPhone 15 128Gb Nuevo Negro</h3>
+                        <div class="product-points">3500 Puntos</div>
+                    </div>
+
+                    <!-- Samsung S24 Ultra -->
+                    <div class="product-card" data-points="4000" data-id="samsung-s24">
+                        <div class="product-image">
+                            <img src="https://ext.same-assets.com/664855097/3130581352.jpeg" alt="Samsung S24 Ultra 256Gb 5G Negro">
+                            <div class="product-overlay">
+                                <div class="overlay-text">Clic para seleccionar</div>
+                            </div>
+                        </div>
+                        <h3>Samsung S24 Ultra 256Gb 5G Negro</h3>
+                        <div class="product-points">4000 Puntos</div>
+                    </div>
+
+                    <!-- Parlante Bosé -->
+                    <div class="product-card" data-points="800" data-id="bose-s1">
+                        <div class="product-image">
+                            <img src="https://ext.same-assets.com/664855097/4062346096.jpeg" alt="Parlante Bosé S1 Pro">
+                            <div class="product-overlay">
+                                <div class="overlay-text">Clic para seleccionar</div>
+                            </div>
+                        </div>
+                        <h3>Parlante Bosé S1 Pro</h3>
+                        <div class="product-points">800 Puntos</div>
+                    </div>
+
+                    <!-- TV LG -->
+                    <div class="product-card" data-points="2500" data-id="lg-tv">
+                        <div class="product-image">
+                            <img src="https://ext.same-assets.com/664855097/918963883.jpeg" alt="Televisor LG 55 Pulgadas LED">
+                            <div class="product-overlay">
+                                <div class="overlay-text">Clic para seleccionar</div>
+                            </div>
+                        </div>
+                        <h3>Televisor LG 55 Pulgadas LED</h3>
+                        <div class="product-points">2500 Puntos</div>
+                    </div>
+
+                    <!-- ASUS Laptop -->
+                    <div class="product-card" data-points="3000" data-id="asus-laptop">
+                        <div class="product-image">
+                            <img src="https://ext.same-assets.com/664855097/2311571197.jpeg" alt="Portátil ASUS Vivobook 15">
+                            <div class="product-overlay">
+                                <div class="overlay-text">Clic para seleccionar</div>
+                            </div>
+                        </div>
+                        <h3>Portátil ASUS Vivobook 15</h3>
+                        <div class="product-points">3000 Puntos</div>
+                    </div>
+
+                    <!-- PlayStation 5 -->
+                    <div class="product-card" data-points="2800" data-id="ps5">
+                        <div class="product-image">
+                            <img src="https://ext.same-assets.com/664855097/2765277579.jpeg" alt="PlayStation 5">
+                            <div class="product-overlay">
+                                <div class="overlay-text">Clic para seleccionar</div>
+                            </div>
+                        </div>
+                        <h3>Playstation 5</h3>
+                        <div class="product-points">2800 Puntos</div>
+                    </div>
+
+                    <!-- AirPods Pro -->
+                    <div class="product-card" data-points="1200" data-id="airpods">
+                        <div class="product-image">
+                            <img src="https://ext.same-assets.com/664855097/2667615322.jpeg" alt="AirPods Pro">
+                            <div class="product-overlay">
+                                <div class="overlay-text">Clic para seleccionar</div>
+                            </div>
+                        </div>
+                        <h3>AirPods Pro</h3>
+                        <div class="product-points">1200 Puntos</div>
+                    </div>
+
+                    <!-- Apple Watch -->
+                    <div class="product-card" data-points="1800" data-id="apple-watch">
+                        <div class="product-image">
+                            <img src="https://ext.same-assets.com/664855097/3910749310.jpeg" alt="Apple Watch Series 9">
+                            <div class="product-overlay">
+                                <div class="overlay-text">Clic para seleccionar</div>
+                            </div>
+                        </div>
+                        <h3>Apple Watch Series 9</h3>
+                        <div class="product-points">1800 Puntos</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Confirm Button -->
+            <section class="confirm-section">
+                <button id="confirmButton" class="confirm-button" disabled>
+                    <span>Confirmar Selección</span>
+                </button>
+            </section>
+        </div>
+    </main>
+
+    <script type="module" src="smain.ts"></script>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="container">
+                <!-- Footer Top -->
+                <div class="footer-top">
+                    <div class="footer-section">
+                        <p class="footer-description">
+                            Intercambia tus puntos Éxito por los mejores productos.
+                            Tecnología, electrodomésticos y más al alcance de tus puntos.
+                        </p>
+                        <div class="footer-social">
+                            <h4>Síguenos</h4>
+                            <div class="footer-social-icons">
+                                <a href="https://www.facebook.com/exito" aria-label="Facebook">
+                                    <img src="https://ext.same-assets.com/664855097/120662609.svg" alt="Facebook">
+                                </a>
+                                <a href="https://www.instagram.com/exito" aria-label="Instagram">
+                                    <img src="https://ext.same-assets.com/664855097/2903597397.svg" alt="Instagram">
+                                </a>
+                                <a href="https://twitter.com/almacenesexito" aria-label="Twitter">
+                                    <img src="https://ext.same-assets.com/664855097/1936307086.svg" alt="Twitter">
+                                </a>
+                                <a href="https://www.youtube.com/user/exitocol" aria-label="YouTube">
+                                    <img src="https://ext.same-assets.com/664855097/3045216425.svg" alt="YouTube">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>Programa de Puntos</h4>
+                        <ul class="footer-links">
+                            <li><a href="#como-funciona">¿Cómo funciona?</a></li>
+                            <li><a href="#ganar-puntos">Cómo ganar puntos</a></li>
+                            <li><a href="#productos">Catálogo de productos</a></li>
+                            <li><a href="#historial">Historial de intercambios</a></li>
+                            <li><a href="#terminos-puntos">Términos del programa</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>Atención al Cliente</h4>
+                        <ul class="footer-links">
+                            <li><a href="#contacto">Contáctanos</a></li>
+                            <li><a href="#pqr">PQR</a></li>
+                            <li><a href="#soporte">Soporte técnico</a></li>
+                            <li><a href="#preguntas">Preguntas frecuentes</a></li>
+                            <li><a href="#estado-pedido">Estado de mi pedido</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>Información Legal</h4>
+                        <ul class="footer-links">
+                            <li><a href="#politica-privacidad">Política de privacidad</a></li>
+                            <li><a href="#terminos-condiciones">Términos y condiciones</a></li>
+                            <li><a href="#cookies">Política de cookies</a></li>
+                            <li><a href="#defensa-consumidor">Defensa del consumidor</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>Descarga la App</h4>
+                        <p class="app-description">Gestiona tus puntos desde tu móvil</p>
+                        <div class="app-buttons">
+                            <a href="#app-store" class="app-button">
+                                <div class="app-icon">📱</div>
+                                <div class="app-text">
+                                    <span class="app-small">Descargar en</span>
+                                    <span class="app-large">App Store</span>
+                                </div>
+                            </a>
+                            <a href="#google-play" class="app-button">
+                                <div class="app-icon">🤖</div>
+                                <div class="app-text">
+                                    <span class="app-small">Disponible en</span>
+                                    <span class="app-large">Google Play</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer Bottom -->
+                <div class="footer-bottom">
+                    <div class="footer-bottom-content">
+                        <div class="footer-copyright">
+                            <p>&copy; 2024 Almacenes Éxito S.A. Todos los derechos reservados.</p>
+                            <p class="footer-nit">NIT: 890.900.608-1</p>
+                        </div>
+                        <div class="footer-certifications">
+                            <div class="certification">
+                                <span class="cert-icon">🛡️</span>
+                                <span>Sitio Seguro</span>
+                            </div>
+                            <div class="certification">
+                                <span class="cert-icon">✅</span>
+                                <span>SSL Certificado</span>
+                            </div>
+                            <div class="certification">
+                                <span class="cert-icon">🏆</span>
+                                <span>Empresa Certificada</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

